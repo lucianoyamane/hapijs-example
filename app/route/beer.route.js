@@ -3,10 +3,10 @@ const { loadBeerService } = require('../service/load.beer.service');
 
 module.exports.methods = [
     {
-        path: '/beer',
+        path: '/beer/{id}',
         method: 'GET',
         handler: (request, h) => {
-            let { id } = request.query;
+            let { id } = request.params;
             let result = findBeerService(id);
             if (result) {
                 return result;
