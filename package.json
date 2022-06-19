@@ -1,0 +1,30 @@
+{
+  "name": "hapijs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=dev nodemon app/api.js",
+    "start:docker": "NODE_ENV=docker nodemon app/api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianoyamane/hapijs-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucianoyamane/hapijs-example/issues"
+  },
+  "homepage": "https://github.com/lucianoyamane/hapijs-example#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "mocha": "^10.0.0"
+  }
+}
